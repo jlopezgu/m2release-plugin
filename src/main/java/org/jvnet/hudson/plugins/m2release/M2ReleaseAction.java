@@ -288,7 +288,7 @@ public class M2ReleaseAction implements PermalinkProjectAction {
 		arguments.setReleaseVersion(releaseVersion);
 		arguments.setDevelopmentVersion(developmentVersion);
 		// TODO - re-implement versions on specific modules.
-
+		LOGGER.log(Level.WARNING, "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXJPXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 		arguments.setCloseNexusStage(closeNexusStage);
 		arguments.setRepoDescription(repoDescription);
 		arguments.setScmUsername(scmUsername);
@@ -297,6 +297,7 @@ public class M2ReleaseAction implements PermalinkProjectAction {
 		arguments.setScmCommentPrefix(scmCommentPrefix);
 		arguments.setAppendHusonUserName(appendHusonUserName);
 		arguments.setHudsonUserName(Jenkins.getAuthentication().getName());
+		LOGGER.log(Level.WARNING, "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXJPXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 
 		
 		if (project.scheduleBuild(0, new ReleaseCause(), parameters, arguments)) {

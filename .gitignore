@@ -9,7 +9,7 @@ bin
 *.iml
 
 # Build output
-target
+#target
 /work
 
 .clover
